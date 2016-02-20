@@ -1,0 +1,147 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2007-2010 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,10pt]{article}
+
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{url}
+\definecolor{mygrey}{gray}{0.80}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+%\addtolength{\textheight}{1.0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
+\newcommand{\ressubheadinged}[4]{
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4}\\
+\end{tabular*}\vspace{-6pt}}
+
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+\textbf{\large Pradyumna Shembekar}\\
+323.597.9301\\
+pshembe@calstatela.edu
+\end{tabular*} 
+\\
+
+\vspace{0.1in}
+
+\resheading{Education}
+\begin{itemize}
+\item
+	\ressubheadinged{California State University}{Los Angeles, CA}{M.S., Computer and Systems Engineering (3.5 GPA)}{March 2014 - June 2016}
+\item
+	\ressubheadinged{Gujarat Technological Institute}{India}{B.E., Electronics and Telecommunications}{July 2009 - May 2013}
+
+\end{itemize}
+
+\resheading{Independent Projects (selected)}
+\begin{itemize}
+\item
+	\ressubheading{Reps \& Sets (Ruby on Rails)}{}{}{}
+	\begin{itemize}
+		\resitem{A web-application to track your workouts and calculate your progress.}
+        \resitem{Users can sign-up, search and follow friends, compare workouts.} 
+        \resitem{The app displays a graphical interpretation of the user's workouts.} 
+        \resitem{A \textbf{Behavior Driven Development (BDD)} approach with automated testing using \textbf{RSpec}, \textbf{Capybara}, and \textbf{Guard} testing suites.Deployed to \textbf{Heroku}.}
+	\end{itemize}
+    
+    \item
+	\ressubheading{Belly Bites (Ruby on Rails)}{}{}{}
+	\begin{itemize}
+		\resitem{A web-application to browse and create recipes.}
+        \resitem{Users have the ability to sign up, up-vote recipes, add their own recipes, and check recipes added by other chefs.} 
+        \resitem{A \textbf{Test-Driven-Development (TDD)} approach, back-end framework in \textbf{Ruby on Rails}, and \textbf{SQLite} as database. Deployed to \textbf{Heroku}.}
+        
+	\end{itemize}
+    
+        \item
+	\ressubheading{Modified MIPS Lite (MML) Multi-cycle Design (3 members), (MIPS, Verilog)}{}{}{}
+	\begin{itemize}
+		\resitem{Designed multi-cycle datapath and the finite state machine for MML. Programmed ALU, clock generator, and contributed towards Main Controller.}
+        \resitem{Played the role of a Lead Test Engineer, responsible for setting benchmark values for various modules.}
+        \resitem{Simulated and tested use cases through \textbf{Xillix} software.}        
+	\end{itemize}
+    
+     \item
+	\ressubheading{Rice Rocks (Python)}{}{}{}
+	\begin{itemize}
+		\resitem{Web-based classic arcade game of a spaceship shooting missiles at rocks.}
+        \resitem{Part of Coursera's course on Interactive Programming in Python}
+	\end{itemize}
+ 
+	\item
+	\ressubheading{Car Automation System (C, MIPS)}{}{}{}
+	\begin{itemize}
+		\resitem{Application to detect open doors and engine state of a car and display alerts on LCD.}
+        \resitem{Used Motorolla 68HC11A8 micro-controller and simulated using \textbf{ThrSim11}.}         
+	\end{itemize}
+ 
+
+\end{itemize}
+
+\resheading{Work Experience}
+
+\begin{itemize}
+\item
+	\ressubheading{Aflac, Inc.}{Pasadena, CA}{Web Developer Intern}{Web  Intern, Winter 2015}
+	\begin{itemize}
+		\resitem{Developed a recruitment website.}
+    \resitem{Converted responsive HTML to dynamic content in PHP using elegant MVC design patterns and integrated with Wordpress.}
+    \resitem{Used different JavaScript and CSS frameworks for better response time.}
+	\end{itemize}
+    
+\item
+	\ressubheading{California State University}{Los Angeles, CA}{Text Transcriber}{Text Transcriber, present}
+	\begin{itemize}
+		\resitem{Transcribed textbooks into accessible formats on Kurzweil and Omnipage.}
+    \resitem{Developed an accessible form in PHP for disabled students to submit requests for books online.}
+	\end{itemize}
+
+
+\end{itemize}
+
+\resheading{Awards}
+
+\begin{itemize}
+\item
+	\ressubheading{Woman's Health Alliance - Hackathon 2015}{Los Angeles, CA}{}{}
+	\begin{itemize}
+    \resitem{Runners up team (6 members) in a hackathon organized by Woman's Health Alliance.}
+    \resitem{Developed a web app to calculate a woman's risk of having a Cardio Vascular Disease (CVD) by setting threshold values obtained from cardiologists.}
+	\end{itemize}
+
+
+\end{itemize}
+
+
+
+\end{document}
