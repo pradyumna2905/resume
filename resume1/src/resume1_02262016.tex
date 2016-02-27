@@ -1,0 +1,171 @@
+% Jason R. Blevins - Curriculum Vitae
+%
+% Copyright (C) 2004-2013 Jason R. Blevins
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely.  No attribution is
+% required in any resulting documents.  I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[10pt]{article}%,letterpaper]{article}
+\title{Resume}
+
+% Jason R. Blevins - Curriculum Vitae
+%
+% Copyright (C) 2004-2013 Jason R. Blevins
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely.  No attribution is
+% required in any resulting documents.  I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{url}
+\usepackage{fontspec}
+\usepackage{fontawesome}
+
+
+% Fonts
+\usepackage[T1]{fontenc}
+\usepackage[urw-garamond]{mathdesign}
+
+% Set your name here
+\def\name{Pradyumna Shembekar}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name: Pradyumna},
+  pdfkeywords = {front-end, back-end, software, new grad, university, university grad, junior, fresh, ruby on rails, C, web development}
+  pdftitle = {\name: Resume},
+  pdfsubject = {Resume},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={7.5in, 10.0in},
+  left=0.5in,
+  top=0.5in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+%% Make lists without bullets and compact spacing
+%\renewenvironment{itemize}{
+%  \begin{list}{}{
+%    \setlength{\leftmargin}{1.5em}
+%    \setlength{\itemsep}{0.1em}
+%    \setlength{\parskip}{0pt}
+%    \setlength{\parsep}{0.1em}
+%  }
+%}{
+%  \end{list}
+%}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\bigskip
+
+\begin{minipage}[t]{0.495\textwidth}
+
+  603 N Mentor Avenue\\
+  Pasadena, CA 91106\\ \textbf{Phone}: (323) 597-9301
+\end{minipage}
+\begin{minipage}[t]{0.495\textwidth}
+  \textbf{Email}: \href{mailto:pshembe@calstatela.edu}{\tt{pshembe@calstatela.edu}} \\ \textbf{Github}: \href{https://github.com/pradyumna2905}{\tt{github.com/pradyumna2905}} \\ \textbf{Linkedin}: \href{https://www.linkedin.com/in/pradyumnashembekar}{\tt{linkedin.com/in/pradyumnashembekar}}
+\end{minipage}
+
+\section*{Education}
+
+\begin{tabular}{llll}
+  \textbf{M.S.}, Computer and Systems Engineering & California State University, Los Angeles & \textbf{June 2016} & \textbf{3.5/4.0} \\
+  B.E., Electronics and Telecommunication Engineering & Gujarat Technological University & May 2013 \\
+\end{tabular}
+
+\section*{Work Experience}
+
+\begin{itemize} \setlength{\parskip}{0.5pt} 
+    
+    \item \textbf{Web Developer - Intern, \textit{Aflac Inc, Los Angeles, Aug 2015 - December 2015}}
+    
+		Created a recruitment website in PHP using elegant MVC design patterns. Integrated with Wordpress and developed a tablet and mobile version. Implemented efficient JavaScript for better response time. Communicated with the HR and design team to meet up with their requirements.
+    
+    \item \textbf{Text Transcriber, \textit{California State University, Los Angeles, Aug 2014 - March 2016}}
+        
+        Transcribed textbooks into accessible formats on Kurzweil and Omnipage. Developed an accessible form in PHP for disabled students to submit requests for books online.
+        
+\end{itemize}
+
+\section*{Independent Projects (selected)}
+
+\begin{itemize} \setlength{\parskip}{0.5pt}
+
+\item \textbf{Reps \& Sets}  \href{https://repsandsets.herokuapp.com/}{\tt{\faLink}}
+
+Built a web-application to track your workouts and calculate your progress. Users can sign-up, search and follow friends, compare workouts with their friends and family. The app displays a graphical interpretation of the user's workouts' summary. A \textbf{Behavior Driven Development (BDD)} approach with automated testing using \textbf{RSpec}, \textbf{Capybara}, and \textbf{Guard} testing suites. Deployed to \textbf{Heroku}. \textbf{(Ruby on Rails)}
+
+\item \textbf{Belly Bites}  \href{https://bellybites.herokuapp.com/}{\tt{\faLink}}
+
+A web-application to browse and create recipes. Users have the ability to sign up, up-vote recipes, add their own recipes, and check recipes added by other chefs. Used \textbf{AWS S3 bucket} to store images uploaded by the user. A \textbf{Test-Driven-Development (TDD)} approach, back-end framework in \textbf{Ruby on Rails}, and \textbf{SQLite} as database. Deployed to \textbf{Heroku}. \textbf{(Ruby on Rails)}
+
+\item \textbf{Modified MIPS Lite (MML) Multi-cycle Design (3 members)}  \\
+Designed multi-cycle datapath and the finite state machine for MML. Programmed ALU, clock generator, and contributed towards Main Controller. Played the role of a Lead Test Engineer, responsible for setting benchmark values for various modules. Simulated and tested use cases through \textbf{Xillix} software. \textbf{(MIPS, Verilog)}
+
+ 
+\item \textbf{Rice Rocks}  \href{http://www.codeskulptor.org/#user38_DZUIDXywMeaZ0Wx_5.py}{\tt{\faLink}}
+
+Built a web-based classic arcade game of a spaceship shooting missiles at rocks. Part of Coursera's course on Interactive Programming in Python. \textbf{(Python)}
+
+
+\item \textbf{Car Automation System} 
+
+Created an application to detect open doors and engine state of a car and display messages on LCD. Used Motorolla 68HC11A8 micro-controller and simulated using \textbf{ThrSim11}. \textbf{(C, MIPS)}
+\end{itemize}
+
+\section*{Awards}
+
+\begin{itemize} \setlength{\parskip}{0.5pt}
+
+\item \textbf{Woman's Health Alliance - Hackathon 2015} \\
+\textbf{Runners up} team (6 members)\\
+Developed a web app to calculate a woman's risk of having a Cardio Vascular Disease (CVD) by setting threshold values obtained from cardiologists.
+        
+\end{itemize}
+
+\section*{Skills}
+
+\begin{itemize}
+  \item Languages: \textbf{C}, \textbf{C++}, JavaScript, PHP, \textbf{Python}, \textbf{Ruby}, \textbf{Swift}
+
+\end{itemize}
+
+
+\end{document}
